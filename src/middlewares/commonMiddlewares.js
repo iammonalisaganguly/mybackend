@@ -6,7 +6,7 @@ const validationMiddleware = function(req, res, next){
          next()
   }
  else {
-     return res.send({msg:"ERR can not creat data. isFreeAppUser Header is requerd"})
+     return res.send({msg:"ERR can not create data. isFreeAppUser Header is requerd"})
      }
  }
  
