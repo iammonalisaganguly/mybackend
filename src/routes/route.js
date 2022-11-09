@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const weatherController= require("../controllers/weatherController")
-const memeController= require("../controllers/memeController")
 
 
 
@@ -12,10 +11,7 @@ router.get("/test-me", function (req, res) {
 
 router.get("/london", weatherController.weatherofLondon)
 router.get("/allcity", weatherController.weatherofallcity)
-router.get("/meme", memeController.meme)
-router.post("/Mymeme", memeController.Mymeme)
 
 
+module.exports=router
 
-
-module.exports = router
